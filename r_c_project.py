@@ -102,8 +102,7 @@ def run():
     my_custo = Customer('mark') 
 
     while True:
-        response = input("What would you like to do?:add_property, display_property, Exit: ").lower().strip()
-        if response == 'add_property':
+        if (response := input("What would you like to do?:add_property, display_property, Exit: ").lower().strip()) == 'add_property':
              my_custo.add_property()
         elif response == 'display_property':
             my_custo.display_property()
